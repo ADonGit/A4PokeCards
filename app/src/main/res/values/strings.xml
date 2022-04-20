@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">A4PokeCards</string>
+    <string name="select_a_set">Select a Set and Card</string>
+
+    <string name="set_HGSS">HeartGold SoulSilver</string>
+    <string name="set_Unleashed">Unleashed</string>
+    <string name="set_Undaunted">Undaunted</string>
+    <string name="set_Triumphant">Triumphant</string>
+    <string name="no_Selection">No Selection</string>
+    <string name="card">Card#</string>
+    <string name="view_favorites">View Favorites</string>
+    <string name="cardSpace">Card\u0020</string>
+    <string name="hp">HP\u0020</string>
+    <string name="series">Series\u0020</string>
+    <string name="set">Set\u0020</string>
+    <string name="favorites">Favorites</string>
+    <string name="flavor_text">Flavor Text</string>
+    <string name="name">Name</string>
+    <string name="del">Del</string>
+
+    <string-array name="sets_array">
+        <item>@string/no_Selection</item>
+        <item>@string/set_HGSS</item>
+        <item>@string/set_Unleashed</item>
+        <item>@string/set_Undaunted</item>
+        <item>@string/set_Triumphant</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRowItem"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/recCardImage"
+
+        android:layout_width="90sp"
+        android:layout_height="135sp"
+
+        android:layout_gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:paddingStart="10sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/titleListLayout"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+        android:orientation="vertical"
+
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+
+        >
+
+        <TextView
+            android:id="@+id/recCardTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="8sp"
+
+            android:text="@string/name"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/recHPTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+            android:text="@string/hp"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+            app:layout_constraintTop_toBottomOf="@id/recCardTitle"
+
+            />
+
+        <TextView
+            android:id="@+id/recSeriesTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+            android:text="@string/series"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+            app:layout_constraintTop_toBottomOf="@id/recHPTitle"
+
+            />
+
+        <TextView
+            android:id="@+id/recSetTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+            android:text="@string/set"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+            app:layout_constraintTop_toBottomOf="@id/recSeriesTitle"
+
+            />
+
+        <TextView
+            android:id="@+id/recFlavorTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+            android:text="@string/flavor_text"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+            app:layout_constraintTop_toBottomOf="@id/recSetTitle"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleListLayout"
+
+        android:orientation="vertical"
+
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+
+        >
+
+        <TextView
+            android:id="@+id/recCardData"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="8sp"
+
+            android:textSize="16sp"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/recHPData"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+
+            android:textSize="16sp"
+
+            app:layout_constraintStart_toEndOf="@id/recCardImage"
+
+            app:layout_constraintTop_toBottomOf="@id/recCardData"
+
+            />
+
+        <TextView
+            android:id="@+id/recSeriesData"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+
+            android:textSize="16sp"
+
+            app:layout_constraintTop_toBottomOf="@id/recHPData"
+
+            />
+
+        <TextView
+            android:id="@+id/recSetData"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+
+            android:textSize="16sp"
+
+            app:layout_constraintTop_toBottomOf="@id/recSeriesData"
+
+            />
+
+        <TextView
+            android:id="@+id/recFlavorData"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="2sp"
+
+android:lines="7"
+
+            android:textSize="16sp"
+
+            app:layout_constraintTop_toBottomOf="@id/recSetData"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/delButton"
+
+        android:layout_width="72sp"
+        android:layout_height="42sp"
+        android:text="@string/del"
+
+        android:backgroundTint="@color/red"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
